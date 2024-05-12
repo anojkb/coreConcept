@@ -1,1 +1,35 @@
 <p>company works!</p>
+<table>
+    <thead>
+        <th scope="col">Index</th>
+        <th scope="col">ID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+    </thead>
+    <tbody>
+        <!-- <tr *ngFor="let empdata of emp;let index=index"> -->
+        <tr *ngFor="let empdata of paginatedData;let index=index">
+            <th scope="row">{{empdata.id}}</th>
+            <td>{{empdata.userId}}</td>
+            <td>{{empdata.title}}</td>
+            <td>{{empdata.body}}</td>
+        </tr>
+    </tbody>
+</table>
+
+  <!-- On tables pagination -->
+<app-pagination 
+    [totalItems]="emp.length" 
+    [itemPerPage]="itemPerPage" 
+    [currentPage]="currentPage" 
+    (onClick)="changePage($event)"></app-pagination>
+<!-- card -->
+    <div class="card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+

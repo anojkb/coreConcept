@@ -1,0 +1,26 @@
+/* Apply basic styles to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Style the table header */
+  thead th {
+    background-color: #05c9fa;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style the table rows */
+  tbody tr:nth-child(even) {
+    background-color: #021bff91;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Style the table cells */
+  td {
+    padding: 8px;
+  }

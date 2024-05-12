@@ -9,6 +9,9 @@ import { AboutComponent } from './about/about.component';
 import { NoPageComponent } from './no-page/no-page.component';
 import { CompanyComponent } from './company/company.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AboutComponent,
     NoPageComponent,
     CompanyComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

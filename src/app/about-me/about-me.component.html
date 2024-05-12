@@ -1,1 +1,21 @@
 <p>please provide about-me works!</p>
+<ul>
+    <li *ngFor = "let user of users">
+        {{user.name}}
+    </li>
+</ul>
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.age}}</td>
+        </tr>
+    </tbody>
+</table>
